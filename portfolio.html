@@ -16,18 +16,20 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header-container">
         <nav class="page-navigation">
-          <a class="logo-white link" href="./index.html">Web<span class="logo-span">Studio</span></a>
+          <a class="logo-white link" href="./index.html"
+            >Web<span class="logo-span">Studio</span></a
+          >
           <ul class="menu-list list">
             <li class="menu-item">
-              <a class="menu-link link" href="./index.html">Studio</a>
+              <a class="menu-link link current" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link current" href="./portfolio.html">Portfolio</a>
+              <a class="menu-link link " href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="">Contacts</a>
+              <a class="menu-link link " href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -43,6 +45,88 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobile-open-menu js-open-menu" data-modal-open>
+          <svg class="icon-mobile-menu" width="32" height="22">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container is-hidden" data-modal>
+        <div class="container">
+          <button class="close-menu-btn js-close-menu " data-modal-close>
+            <svg class="modal-close-icon"
+            aria-label="іконка close-btn"
+            width="8"
+            height="8">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+          </button>
+          <ul class="menu-list-mobile list">
+            <li class="menu-item">
+              <a class="menu-link link current" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link " href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link " href="#">Contacts</a>
+            </li>
+          </ul>
+          <address class="contact-info-addr">
+            <ul class="contact-info list">
+              <li class="menu-item">
+                <a class="contact-info-link link current" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                
+              </li>
+              <li class="contact-info-item">
+                <a class="contact-info-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="social-list-mobile list">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon"
+                  aria-label="іконка інстаграму"
+                  width="24"
+                  height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon"
+                 aria-label="іконка твітера"
+                 width="24"
+                 height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon"
+                 aria-label="іконка фейсбука"
+                 width="24"
+                 height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon"
+                 aria-label="іконка лінкедина"
+                 width="24"
+                 height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -69,8 +153,8 @@
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                   </div>
                   <div class="text-cards">
-                    <h2 class="title-text">Banking App Interface Concept</h2>
-                    <p class="section-text">App</p>
+                    <h2 class="card-title-text">Banking App Interface Concept</h2>
+                    <p class="card-section-text">App</p>
                   </div>
                 </a>
               </li>
@@ -87,8 +171,8 @@
                   </div>
                  
                   <div class="text-cards">
-                    <h2 class="title-text">Cashless Payment</h2>
-                    <p class="section-text">Marketing</p> 
+                    <h2 class="card-title-text">Cashless Payment</h2>
+                    <p class="card-section-text">Marketing</p> 
                   </div>
                 </a>
               </li>
@@ -105,8 +189,8 @@
                   </div>
                   
                   <div class="text-cards">
-                    <h2 class="title-text">Meditation App</h2>
-                    <p class="section-text">App</p>
+                    <h2 class="card-title-text">Meditation App</h2>
+                    <p class="card-section-text">App</p>
                   </div>
                 </a>
               </li>
@@ -123,8 +207,8 @@
                   </div>
                   
                   <div class="text-cards">
-                    <h2 class="title-text">Taxi Service</h2>
-                    <p class="section-text">Marketing</p>
+                    <h2 class="card-title-text">Taxi Service</h2>
+                    <p class="card-section-text">Marketing</p>
                   </div>
                 </a>
               </li>
@@ -141,8 +225,8 @@
                   </div>
                   
                   <div class="text-cards">
-                    <h2 class="title-text">Screen Illustrations</h2>
-                    <p class="section-text">Design</p>
+                    <h2 class="csrd-title-text">Screen Illustrations</h2>
+                    <p class="card-section-text">Design</p>
                   </div>
                 </a>
               </li>
@@ -159,8 +243,8 @@
                   </div>
                   
                   <div class="text-cards">
-                    <h2 class="title-text">Online Courses</h2>
-                    <p class="section-text">Marketing</p>
+                    <h2 class="card-title-text">Online Courses</h2>
+                    <p class="card-section-text">Marketing</p>
                   </div>
                 </a>
               </li>
@@ -177,8 +261,8 @@
                   </div>
                   
                   <div class="text-cards">
-                    <h2 class="title-text">Instagram Stories Concept</h2>
-                    <p class="section-text">Design</p>
+                    <h2 class="card-title-text">Instagram Stories Concept</h2>
+                    <p class="card-section-text">Design</p>
                   </div>
                 </a>
               </li>
@@ -195,8 +279,8 @@
                   </div>
                   
                   <div class="text-cards">
-                    <h2 class="title-text">Organic Food</h2>
-                    <p class="section-text">Web Site</p>
+                    <h2 class="card-title-text">Organic Food</h2>
+                    <p class="card-section-text">Web Site</p>
                   </div>
                 </a>
               </li>
@@ -213,8 +297,8 @@
                   </div>
                   
                   <div class="text-cards">
-                    <h2 class="title-text">Fresh Coffee</h2>
-                    <p class="section-text">Web Site</p>
+                    <h2 class="card-title-text">Fresh Coffee</h2>
+                    <p class="card-section-text">Web Site</p>
                   </div>
                 </a>
               </li>
@@ -223,7 +307,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container ">
+      <div class="container">
         <div class="footer-logo">
           <a class="logo-dark link" href="./index.html"
             >Web<span class="logo-span-footer">Studio</span></a
